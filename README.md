@@ -14,4 +14,8 @@ You don't have a Goovy installer, but you do have a working Maven environment
 
 Just run the `install_groovy_via_maven.sh` script in bash - optional groovy version string as first arg. Script can be run again and again, fairly safely.  
 
+## Bugs/Features/TODO
+
+1. Grapes is not working in GitBash on Windows for me: https://issues.apache.org/jira/projects/GROOVY/issues/GROOVY-11454 
+
 
