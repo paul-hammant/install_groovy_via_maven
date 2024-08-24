@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# From https://github.com/paul-hammant/install_groovy_via_maven
-# v1.0
-
 # Stop the script immediately if any command exits with a non-zero status
 set -e
 
@@ -83,6 +80,16 @@ sed -i '/<dependencies>/a \
         <groupId>org.apache.groovy</groupId>\
         <artifactId>groovy-nio</artifactId>\
         <version>'$VERSION'</version>\
+    </dependency>\
+    <dependency>\
+        <groupId>org.apache.groovy</groupId>\
+        <artifactId>groovy-grape</artifactId>\
+        <version>'$VERSION'</version>\
+    </dependency>\
+    <dependency>\
+        <groupId>org.apache.ivy</groupId>\
+        <artifactId>ivy</artifactId>\
+        <version>2.5.0</version>\
     </dependency>' $POM_FILE
 
 # Step 5: Force Maven to resolve dependencies and build classpath
