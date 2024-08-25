@@ -16,6 +16,7 @@ Just run the `install_groovy_via_maven.sh` script in bash - optional groovy vers
 
 ## Bugs/Features/TODO
 
-1. Grapes is not working in GitBash on Windows for me: https://issues.apache.org/jira/projects/GROOVY/issues/GROOVY-11454 
+1. Grapes is not working in GitBash on Windows for me: https://issues.apache.org/jira/projects/GROOVY/issues/GROOVY-11454
+2. Do something better than hard code Ivy 2.5.2
 
 
